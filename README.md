@@ -16,7 +16,7 @@ We used a six scripts to control actions of visual events, collect data and send
 
     Lab_1_Controller.cs: controll the action of each visual event, the time clock, and net message. Add this script to 'Lab_1_Controller' as a component. Add four kinds of visual events to 'Obj list' manually. Add 'Lab_1_text_finish' to 'Last flag'
 
-    Lab_1_StimulsBase.cs: this is the basic class of all visual events including all basic action. The attribution of each visual event has been attached with the individual script, see below.
+    Lab_1_StimulsBase.cs: the basic class of all visual events including all basic action. The attribution of each visual event has been attached with the individual script, see below.
     
     Lab_1_DynamicText.cs: set stimulus parameters for dynamic text. Add this script to 'Lab_1_StaticText'.
 
@@ -34,3 +34,4 @@ net message format:
 
 
 Acknowledgement:
+The author Gaiqing are grateful to Shichun Hu for great help on coding and discussing, to Emil Davchev and Boris Bahariev for providing technical support on this project.
