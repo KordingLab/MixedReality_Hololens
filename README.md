@@ -3,7 +3,7 @@
 
 This is a project with Hololens to investigate how the mixed reality affect quiet stance. In this project, we presented solid object and text randomly, in both a static and a dynamic setting. We measured the head movements using the built-in tracking mechanism of the Hololens,and sent data to a net server.
 
-We used a six scripts to control actions of visual events, collect data and send data from client to server, see below.      
+We used a set of scripts to control actions of visual events, collect data and send data from client to server, see below.      
 
 
 --Scripts
