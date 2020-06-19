@@ -30,11 +30,15 @@ We used a set of scripts to control actions of visual events, get data of head m
     
     WordConf.cs and WordGenerator.cs: to generate the texts used with the object.
 
-data formats sent to the server:
+data sent to the local server:
 
     camera data format: the tpye of visual event, time, position.x, position.y, position.z, angle.x, angle.y, angle.z;
     
     visual events data format: the tpye of visual event, action start time, action end time;
+
+
+Note:
+Please install all the softwares needed before running this assets and do all the settings properly. The visualizations were first developed in the unity platform (Unity 5.5.0f3 Personal), then exported to Visual Studio (Microsoft Visual Studio 2015), then built and deployed to the HoloLens. To build the mixed reality environment with Unity, we set up the camera and other project settings as needed. For details of those steps, including developing the scene in Unity, compiling to Visual Studio, and deploying to Hololens, please refer to https://developer.microsoft.com/en-us/windows/mixed-reality/holograms_100. The ‘Near Clip Plane’ of ‘Main Camera’ for our project is 0.3. The experimental data was sent to a local server.
 
 
 Acknowledgement:
