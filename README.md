@@ -30,7 +30,7 @@ We used a set of scripts to control actions of visual events, get data of head m
     
     WordConf.cs and WordGenerator.cs: to generate the texts used with the object.
 
-data format on the server:
+data formats sent to the server:
 
     camera data format: the tpye of visual event, time, position.x, position.y, position.z, angle.x, angle.y, angle.z;
     
