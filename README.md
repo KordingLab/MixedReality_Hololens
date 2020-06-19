@@ -1,10 +1,9 @@
-# mixed-reality
+# Evaluation of head movements of mixed reality on quiet stance
 
 
-This is a project with Hololens to investigate how the mixed reality affect quiet stance. In this project, we presented solid object and text randomly, in both a static and a dynamic setting. We measured the head movements using the built-in tracking mechanism of the Hololens,and sent data to a net server.
+Mixed reality Mixed reality (MR) has promise for learning, design, and entertainment, and for use during everyday life. In this project, we instructed subjects to stand quietly, and measured how much virtual stimuli presented in mixed reality (Microsoft HoloLens) affected their quiet stance. 
 
-We used a set of scripts to control actions of visual events, collect data and send data from client to server, see below.      
-
+We used a set of scripts to control actions of visual events, get data of head movements from Hololens, and send data from client to server.  
 
 --Scripts
     --Lab_1_Controller.cs
@@ -12,19 +11,23 @@ We used a set of scripts to control actions of visual events, collect data and s
     --Lab_1_DynamicText.cs
     --Lab_1_StaticText.cs
     --Lab_1_StaticObject.cs
-    --Lab_1_DynamicObject.cs
-
-    Lab_1_Controller.cs: controll the action of each visual event, the time clock, and net message. Add this script to 'Lab_1_Controller' as a component. Add four kinds of visual events to 'Obj list' manually. Add 'Lab_1_text_finish' to 'Last flag'
-
-    Lab_1_StimulsBase.cs: the basic class of all visual events including all basic action. The attribution of each visual event has been attached with the individual script, see below.
+    --Lab_1_DynamicObjectH.cs
+    --Lab_1_DynamicObjectV.cs
+    --WordConf.cs
+    --WordGenerator.cs
+   
     
-    Lab_1_DynamicText.cs: set stimulus parameters for dynamic text. Add this script to 'Lab_1_StaticText'.
+    Lab_1_Controller.cs: control the visual events including the actions, send and save data. Add this script to 'Lab_1_Controller' as a component. Add four types of visual events to 'Obj list' manually. Attach scripts to each visual event, respectively, please see the four scripts below. Add 'Lab_1_text_finish' to 'Last flag'
 
-    Lab_1_StaticText.cs: set stimulus parameters for static text. Add this script to 'Lab_1_DynamicText'
+    Lab_1_StaticObject.cs: set stimulus parameters for static object and text. Add this script to 'basketball_dynamic'.
+    
+    Lab_1_DynamicObject.cs: set stimulus parameters for dynamic object moving from back to front. Add this script to 'basketball_dynamic'.
 
-    Lab_1_StaticObject.cs: set stimulus parameters for static object. Add this script to 'basketball_dynamic' 
-
-    Lab_1_DynamicObject.cs: set stimulus parameters for dynamic object. Add this script to 'basketball_static'
+    Lab_1_DynamicObjectH.cs: set stimulus parameters for dynamic object and text from left to right. Add this script to 'basketball_dynamicH'.
+    
+    Lab_1_DynamicObjectV.cs: set stimulus parameters for dynamic object with text from up to down. Add this script to 'basketball_dynamicV'.
+    
+    WordConf.cs and WordGenerator.cs: to generate the texts used with the object.
 
 net message format:
 
@@ -34,4 +37,4 @@ net message format:
 
 
 Acknowledgement:
-The author Gaiqing are grateful to Shichun Hu for great help on coding and discussing, to Emil Davchev and Boris Bahariev for providing technical support on this project.
+The author Gaiqing would like to thank Shichun Hu and Yuliang Ye for their assistance with the development of set-up, also thanks to Emil Davchev and Boris Bahariev for providing technical support on this project.
