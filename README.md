@@ -6,6 +6,7 @@ Mixed reality Mixed reality (MR) has promise for learning, design, and entertain
 We used a set of scripts to control actions of visual events, get data of head movements from Hololens, and send data from client to server.  
 
 --Scripts
+
     --Lab_1_Controller.cs
     --Lab_1_StimulusBase.cs
     --Lab_1_DynamicText.cs
