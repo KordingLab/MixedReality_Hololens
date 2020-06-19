@@ -3,7 +3,7 @@
 
 Mixed reality Mixed reality (MR) has promise for learning, design, and entertainment, and for use during everyday life. In this project, we instructed subjects to stand quietly, and measured how much virtual stimuli presented in mixed reality (Microsoft HoloLens) affected their quiet stance. 
 
-We used a set of scripts to control actions of visual events, get data of head movements from Hololens, and send data from client to server.  
+We used a set of scripts to control actions of visual events, get data of head movements from Hololens, and send data from client to our server.  
 
 --Scripts
 
@@ -30,7 +30,7 @@ We used a set of scripts to control actions of visual events, get data of head m
     
     WordConf.cs and WordGenerator.cs: to generate the texts used with the object.
 
-net data format:
+data format on the server:
 
     camera data format: the tpye of visual event, time, position.x, position.y, position.z, angle.x, angle.y, angle.z;
     
