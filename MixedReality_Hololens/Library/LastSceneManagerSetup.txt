@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Lab_1/MixedRealityHololens.unity
+  isLoaded: 1
+  isActive: 1
